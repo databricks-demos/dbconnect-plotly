@@ -4,7 +4,7 @@ import plotly.express as px
 
 # PySpark and databricks-connect related imports.
 from databricks.connect.session import DatabricksSession as SparkSession
-from databricks.sdk import WorkspaceClient
+from databricks.sdk.core import Config
 from pyspark.sql.functions import col
 from pyspark.sql.types import StringType
 import pyspark.sql.functions as F
@@ -175,7 +175,7 @@ def update_trip_count(greaterThan):
     ],
 )
 
-config = WorkspaceClient(profile="PROFILE", cluster_id="CLUSTER_ID").config
+config = Config(profile="PROFILE", cluster_id="CLUSTER_ID")
 spark = SparkSession.builder.sdkConfig(config).getOrCreate()
 
 

@@ -32,9 +32,9 @@ In the app.py file configure the values for `PROFILE`, `CLUSTER_ID` accordingly.
 
 ```python
 from databricks.connect.session import DatabricksSession as SparkSession
-from databricks.sdk import WorkspaceClient
+from databricks.sdk.core import Config
 
-config = WorkspaceClient(profile="PROFILE", cluster_id="CLUSTER_ID").config
+config = Config(profile="PROFILE", cluster_id="CLUSTER_ID")
 spark = SparkSession.builder.sdkConfig(config).getOrCreate()
 ```
 
