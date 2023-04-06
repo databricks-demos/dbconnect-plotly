@@ -1,3 +1,14 @@
-## Support
-Databricks does not offer official support for `dbdemos` or any demo assets.
-For any issue with `dbdemos` or the demos installed, please open an issue and the demo team will have a look on a best effort basis.
+Copyright (2023) Databricks, Inc.
+
+This Software includes software developed at Databricks (https://www.databricks.com/) and its use is subject to the included LICENSE file.
+
+This Software contains code from the following open source projects, licensed under the MIT license:
+
+psf/requests - https://github.com/psf/requests
+Copyright (c) 2022 Plotly, Inc
+License - https://github.com/plotly/dash/blob/dev/LICENSE
+
+tailwindlabs/tailwindcss - https://github.com/tailwindlabs/tailwindcss
+Copyright (c) Tailwind Labs, Inc.
+License - https://github.com/tailwindlabs/tailwindcss/blob/master/LICENSE 
+
